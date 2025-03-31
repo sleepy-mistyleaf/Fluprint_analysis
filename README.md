@@ -1,41 +1,48 @@
 # Fluprint_analysis
 
-1. Project Title
+## 1. FluPRINT Analysis for Understanding Vaccine Response.
 
-    Clearly state the name of your project at the top of the README.
+## 2. Description
+This project aims to analyze the FluPRINT dataset to better understand immune responses to influenza vaccines. This analysis's significance lies in its potential to identify novel biological factors influencing vaccine efficacy, which is crucial for improving public health outcomes. Understanding vaccination responses can help address current challenges in vaccine effectiveness and immune response variability.
 
-2. Description
+## 3. Motivation
+### The Problem
+Current vaccination strategies face challenges due to variability in individual immune responses, which can lead to reduced vaccine effectiveness across different age groups and influenza seasons. Previously identified correlates of protection often fail to account for the majority of individual responses, highlighting the need for more comprehensive analyses.
 
-    Provide a brief overview of what your project does and its significance. Explain why you are conducting this analysis, such as the importance of understanding vaccination responses or the potential impact on public health.
+ ### Main Goals:
+Our primary goal is identifying key immune cell populations and molecular markers correlating with strong vaccine responses. By leveraging machine learning techniques, we aim to uncover novel predictors of vaccine efficacy and contribute to the development of more personalized vaccination strategies.
 
-3. Motivation
+## 4. Dataset Information
 
-    Discuss the motivation behind your project. This could include:
+   ### Source of the Data
+The FluPRINT dataset is a multidimensional analysis of the influenza vaccine's impact on the immune system. It is publicly available and sourced from multiple clinical studies conducted between 2007 and 2015.
 
-        The Problem: Describe the current challenges in vaccination effectiveness and immune response understanding.
+        The official Fluprint paper can be accessed via Tomic, A., Tomic, I., Dekker, C.L. et al. The FluPRINT dataset, a multidimensional analysis of the influenza vaccine imprint on the immune system. Sci Data 6, 214 (2019). https://doi.org/10.1038/s41597-019-0213-4
+        
+        Data was downloaded from Zenodo: https://zenodo.org/records/3222451#.XOb7MaR7lPY
+        
+        Data is also available at https://fluprint.com.
 
-        Your Goals: State what you hope to achieve with this analysis (e.g., identifying key immune cell populations that correlate with vaccine response).
+   ### Preprocessing Steps
+Preprocessing involved cleaning data, handling missing values, and transforming features (e.g., one-hot encoding for categorical variables). We also applied techniques like SMOTE to address class imbalance.
 
-4. Dataset Information
+## 6. Methodology Overview
+### Data Cleaning Techniques:
+ - Data Inspection: Initial exploration to identify missing values and outliers.
+ - Data Transformation: Pivoting and column renaming to organize immune cell data.
+ - Feature Retention: Applying a threshold to exclude features with high sparsity.
 
-    Briefly describe the dataset you are using (e.g., Fluprint), including:
+### Machine Learning Models
+1. Logistic Regression: Used for initial classification tasks.
+2. Polynomial Regression: Explored to capture non-linear relationships.
+3. Random Forest: Employed for handling high-dimensional data and complex interactions.
+4. Gradient Boosting Classifier: Utilized to mitigate overfitting issues.
+5. K-Means Clustering: Applied for unsupervised learning to identify immune profiles.
 
-        Source of the data.
+### Evaluation Metrics
+- Accuracy: Primary metric for classification models.
+- F1-Score: Used to assess the balance between precision and recall.
+- ROC AUC: Evaluated for class separation and model robustness.
+- Cross-Validation: Employed to ensure model generalizability.
 
-        Key features and dimensions of the dataset.
 
-        Any preprocessing steps taken.
-
-5. Methodology Overview
-
-    Provide an outline of the methods you will employ in your analysis, such as:
-
-        Data cleaning techniques.
-
-        Machine learning models you plan to use (e.g., regression, classification).
-
-        Evaluation metrics for model performance.
-
-6. Expected Outcomes
-
-    Discuss what you anticipate discovering through your analysis and how it might contribute to existing knowledge or practices in vaccination strategies.
