@@ -3,14 +3,14 @@
 ## 1. FluPRINT Analysis for Understanding Vaccine Response.
 
 ## 2. Description
-This project aims to analyze the FluPRINT dataset to better understand immune responses to influenza vaccines. This analysis's significance lies in its potential to identify novel biological factors influencing vaccine efficacy, which is crucial for improving public health outcomes. Understanding vaccination responses can help address current challenges in vaccine effectiveness and immune response variability.
+This project aims to analyse the FluPRINT dataset to better understand immune responses to influenza vaccines. This analysis's significance lies in its potential to identify novel biological factors influencing vaccine efficacy, which is crucial for improving public health outcomes. Understanding vaccination responses can help address current challenges in vaccine effectiveness and immune response variability.
 
 ## 3. Motivation
 ### The Problem
 Current vaccination strategies face challenges due to variability in individual immune responses, which can lead to reduced vaccine effectiveness across different age groups and influenza seasons. Previously identified correlates of protection often fail to account for the majority of individual responses, highlighting the need for more comprehensive analyses.
 
  ### Main Goals:
-Our primary goal is identifying key immune cell populations and molecular markers correlating with strong vaccine responses. By leveraging machine learning techniques, we aim to uncover novel predictors of vaccine efficacy and contribute to the development of more personalized vaccination strategies.
+Our primary goal is identifying key immune cell populations and molecular markers correlating with strong vaccine responses. By leveraging machine learning techniques, we aim to uncover novel predictors of vaccine efficacy and contribute to the development of more personalised vaccination strategies.
 
 ## 4. Dataset Information
 
@@ -44,5 +44,16 @@ Preprocessing involved cleaning data, handling missing values, and transforming 
 - F1-Score: Used to assess the balance between precision and recall.
 - ROC AUC: Evaluated for class separation and model robustness.
 - Cross-Validation: Employed to ensure model generalizability.
+
+## Steps:
+1. data_aquisition_processing
+2. data_analysis
+3. logistic_regression
+4. polynomial_regression
+5. random_forest
+6. XBoosted_forest
+7. fluprint_filtered_processing
+8. K-means clustering
+
 
 
